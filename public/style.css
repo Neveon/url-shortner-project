@@ -1,0 +1,19 @@
+body {
+  background:black;
+  color:white;
+}
+code {
+  color: red;
+}
+b {
+  text-decoration: underline;
+}
+a:hover {
+  color:lightblue;
+}
+a:visited {
+  color:blue;;
+}
+footer {
+  margin-top: 10vh;
+}
