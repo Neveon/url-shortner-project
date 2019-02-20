@@ -15,7 +15,7 @@ example: `POST [project_url]/api/shorturl/new - https://www.google.com`
 - Learned a known [bug](https://techoverflow.net/2018/12/09/how-to-fix-webpack-error-describe-optionsschema-definitions-output-properties-path-description/) in webpack `4.20.0` that can be worked around by changing the version
 - Learned `{useNewUrlParser:true}` removes DeprecationWarning when connect to the mongo database with `mongoose.connect(process.env.MONGO_URI)`
 - Learned the use of `(*)` in the route parameter ignores the server trying to get into a sub directory when encountering http:// string.
-⋅⋅*Example:(`/api/shortcut/new/https://www.github.com`)
+⋅⋅⋅Example:(`/api/shortcut/new/https://www.github.com`)
 - `dns.lookup()` only takes the hostname, not the full URL. Can be used to find valid working websites.
 - The use of `new URL(someURL)` is not supported in IE11 or below
 - Different returns when there is no data in `.find()` and `.findOne()`. One returns `[]` and the other `null`, respectively
