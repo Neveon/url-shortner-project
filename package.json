@@ -2,7 +2,7 @@
 	"name": "fcc-learn-node-with-express",
 	"version": "0.1.0",
 	"dependencies": {
-		"express": "4.*",
+		"express": "4.16.*",
 		"body-parser": "1.18.3",
 		"cors": "*",
     "mongodb":"*",
