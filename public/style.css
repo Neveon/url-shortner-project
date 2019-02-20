@@ -8,11 +8,14 @@ code {
 b {
   text-decoration: underline;
 }
+a {  
+  color:lightblue;
+}
 a:hover {
   color:lightblue;
 }
 a:visited {
-  color:blue;;
+  color:lightblue;;
 }
 footer {
   margin-top: 10vh;
