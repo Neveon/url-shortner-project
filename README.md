@@ -17,9 +17,7 @@ example: `POST [project_url]/api/shorturl/new - https://www.google.com`
 
 - Learned `{useNewUrlParser:true}` removes DeprecationWarning when connect to the mongo database with `mongoose.connect(process.env.MONGO_URI)`
 
-- Learned the use of `(*)` in the route parameter ignores the server trying to get into a sub directory when encountering `'http://'` string.
-
-*Example:(`/api/shortcut/new/https://www.github.com`)
+- Learned the use of `(*)` in the route parameter ignores the server trying to get into a sub directory when encountering `'http://'` string. (e.g. `/api/shortcut/new/https://www.github.com`)
 
 - `dns.lookup()` only takes the hostname, not the full URL. Can be used to find valid working websites.
 
