@@ -2,13 +2,21 @@
 	"name": "fcc-learn-node-with-express",
 	"version": "0.1.0",
 	"dependencies": {
-		"express": "*",
-		"body-parser": "*",
-		"cors": "*"
+		"express": "4.*",
+		"body-parser": "1.18.3",
+		"cors": "*",
+    "mongodb":"*",
+    "mongoose":"*",
+    "react":"*",
+    "react-dom":"*",
+    "webpack": "4.19.*",
+    "webpack-cli": "^2.0.12",
+    "jsx-loader":"^0.13.2"
   },
-	"main": "myApp.js",
+	"main": "server.js",
 	"scripts": {
-		"start": "node myApp.js"
+    "build":"webpack",
+		"start": "webpack && node server.js"
 	},
 	"engines": {
 		"node": "10"
