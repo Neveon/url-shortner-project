@@ -57,7 +57,7 @@ app.get('/api/shorturl/new/:urlToShorten(*)', function(req, res){
           let short = Math.floor(Math.random()*10000).toString(); //Create random number (0,10000)
           let doc = new shortUrl(
             {
-              "original_url":fullURL.origin, //fullURL.origin is the full URL submitted by client
+              "original_url":urlToShorten, 
               "short_url": short //Random number
             }
           );
@@ -70,7 +70,7 @@ app.get('/api/shorturl/new/:urlToShorten(*)', function(req, res){
         
           //send json of the newly created document
           return res.json({
-            "original_url":fullURL.origin,
+            "original_url":urlToShorten,
             "short_URL": doc.short_url
           });
           
@@ -124,7 +124,7 @@ app.post('/api/shorturl/new', function(req, res){
           let short = Math.floor(Math.random()*10000).toString(); //Create random number (0,10000)
           let doc = new shortUrl(
             {
-              "original_url":fullURL.origin, //fullURL.origin is the full URL submitted by client (https://www.somewebsite.com/more)
+              "original_url":urlToShorten,
               "short_url": short //Random number
             }
           );
@@ -137,7 +137,7 @@ app.post('/api/shorturl/new', function(req, res){
         
           //send json of the newly created document
           return res.json({
-            "original_url":fullURL.origin,
+            "original_url":urlToShorten,
             "short_URL": doc.short_url
           });
           
